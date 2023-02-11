@@ -4,11 +4,11 @@
 # новых уроках - https://t.me/isartem_bot
 # pip install pyTelegramBotAPI
 # pip install openai
-from config import api_ident
+from config import api_ident, BOT
 import telebot
 import openai
 
-bot = telebot.TeleBot("6023813534:AAE6i3zDhxSX_ZGs74dbQlMSqmpfAjLWmw0")
+bot = telebot.TeleBot(BOT)
 openai.api_key = api_ident
 
 @bot.message_handler(content_types=["text"])
